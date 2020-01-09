@@ -3,7 +3,6 @@ char incomingByte;
 #define LMB 3
 #define RMF 4
 #define RMB 5
-#define power 6
 
 void setup()
 {
@@ -27,10 +26,6 @@ void loop()
       case 'd' : movebackward();break;
       case 'r' : moveright();break;
       case 'l' : moveleft();break;
-      case 'n' : moveforward();delay(20);moveleft();break;
-      case 'e' : moveforward();delay(20);moveright();break;
-      case 'w' : movebackward();delay(20);moveright();break;
-      case 's' : movebackward();delay(20);moveright();break;
       case 'h' : halt();break;
       default  : break;
     }
